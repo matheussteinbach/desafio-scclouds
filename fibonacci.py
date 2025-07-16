@@ -22,3 +22,18 @@ def fibonacci_linear(n):
             i += 1
 
         return atual
+
+while True:
+    n = input("Insira o valor de N: ")
+    try:
+        n = int(n)
+        if n >= 0:
+            break
+    except ValueError:
+        continue
+    print("O valor de N deve ser um número inteiro maior ou igual a zero!")
+
+print('Fibonacci recursivo = ', fibonacci_recursivo(n))
+print('Fibonacci linear = ', fibonacci_linear(n))
+# Verificações de n <= 1 poderiam ser feitas apenas uma vez previamente
+# Foram feitas nas funções para funcionarem independentemente do main
