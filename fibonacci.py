@@ -30,7 +30,7 @@ while True:
         if n >= 0:
             break
     except ValueError:
-        continue
+        pass
     print("O valor de N deve ser um número inteiro maior ou igual a zero!")
 
 print('Fibonacci recursivo = ', fibonacci_recursivo(n))
